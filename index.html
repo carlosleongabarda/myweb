@@ -1,40 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tu Nombre — Título</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carlos León — UX/UI & Frontend Designer</title>
+  <meta name="description" content="UX/UI & Frontend Designer · Founder of LOVEOBSESSED" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- You can swap to any font you prefer; using system stack by default -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Inter variable (300..900) + rendimiento -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <img src="tu-foto.jpg" alt="Tu nombre" />
-    <h1>Tu Nombre</h1>
-    <h2>Tu rol o subtítulo</h2>
-    <a href="#detalle" class="btn">Ver más</a>
-  </header>
+  <main class="wrap">
+    <header class="hero" role="banner">
+      <h1 class="title">Carlos León</h1>
+      <p class="subtitle">UX/UI &amp; Frontend Designer · Founder of LOVEOBSESSED</p>
+    </header>
 
-  <section id="detalle" class="about">
-    <h3>Sobre mí</h3>
-    <p>Aquí puedes escribir tu historia, descripción profesional o lo que quieras mostrar.</p>
-  </section>
+    <section aria-labelledby="links-heading" class="links">
+      <h2 id="links-heading" class="sr-only">Enlaces principales</h2>
 
-  <section class="work">
-    <h3>Proyectos o enlaces</h3>
-    <ul>
-      <li><a href="https://tuenlace1.com" target="_blank">Proyecto 1</a></li>
-      <li><a href="https://tuenlace2.com" target="_blank">Proyecto 2</a></li>
-      <li><a href="https://tuenlace3.com" target="_blank">Proyecto 3</a></li>
-    </ul>
-  </section>
+      <!-- Card 1 -->
+      <a class="card card--dark" href="https://loveobsessed.es" target="_blank" rel="noopener noreferrer" aria-label="LOVEOBSESSED — Explore the streetwear brand">
+        <span class="card__icon" aria-hidden="true">
+          <!-- Simple flower-like logo -->
+          <img src="logolove.png" alt="" />
+        </span>
+        <span class="card__content">
+          <strong class="card__title">LOVEOBSESSED©</strong>
+          <span class="card__desc">Explore the streetwear brand I've been crafting since 2022.</span>
+        </span>
+        <span class="card__cta" aria-hidden="true">
+          <!-- Arrow up-right in a circle -->
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M10 14l4-4M10 10h4v4"/>
+          </svg>
+        </span>
+      </a>
 
-  <footer>
-    <nav>
-      <a href="#detalle">Sobre mí</a> ·
-      <a href="#work">Proyectos</a> ·
-      <a href="mailto:tucorreo@example.com">Contacto</a>
-    </nav>
-    <p>&copy; 2025 Tu Nombre</p>
-  </footer>
+      <!-- Card 2 -->
+      <a class="card card--dark" href="https://instagram.com/loveobsessed.co" target="_blank" rel="noopener noreferrer" aria-label="Instagram @loveobsessed.co">
+        <span class="card__icon" aria-hidden="true">
+          <!-- Instagram glyph -->
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </span>
+        <span class="card__content">
+          <strong class="card__title">@LOVEOBSESSED.CO</strong>
+          <span class="card__desc">Join us on Instagram, we're on the road to 10k.</span>
+        </span>
+        <span class="card__cta" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M10 14l4-4M10 10h4v4"/>
+          </svg>
+        </span>
+      </a>
+
+      <!-- Card 3 (white) -->
+      <a class="card card--light"
+   href="PortfolioUXUI-CarlosLeón2.pdf"
+   target="_blank"
+   rel="noopener"
+   aria-label="View portfolio (PDF)">
+        <span class="card__icon card__icon--light" aria-hidden="true">
+          <!-- Circled C -->
+          <img src="c_Mesa de trabajo 1_Mesa de trabajo 1.png" alt="" />
+        </span>
+        <span class="card__content">
+          <strong class="card__title card__title--light">PORTFOLIO</strong>
+          <span class="card__desc card__desc--light">Open my portfolio here!</span>
+        </span>
+        <span class="card__cta card__cta--light" aria-hidden="true">
+          <!-- Download arrow in a circle -->
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 8v6M8.5 12.5l3.5 3.5 3.5-3.5"/>
+          </svg>
+        </span>
+      </a>
+    </section>
+
+    <footer class="site-footer">
+      <nav aria-label="Enlaces del pie">
+        <a href="https://loveobsessed.es/pages/contact" title="Sobre LOVE">Sobre LOVE</a>
+        <span class="dot">·</span>
+        <a href="PortfolioUXUI-CarlosLeón2.pdf" title="Portfolio">Portfolio</a>
+        <span class="dot">·</span>
+        <a href="https://mail.google.com/mail/?view=cm&to=carlosleongabarda@gmail.com" target="_blank" rel="noopener">
+            Email
+          </a>
+      </nav>
+      <p class="copy">©2025 Carlos León</p>
+    </footer>
+
+    
+  </main>
 </body>
 </html>
+
