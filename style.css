@@ -1,5 +1,87 @@
-* {
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
+  color: #222;
+  background: #fafafa;
+  text-align: center;
+}
+
+.hero {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero h1 {
+  margin: 20px 0 5px;
+  font-size: 2.5rem;
+}
+
+.hero h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 30px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+section p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.work ul {
+  list-style-type: none;
   padding: 0;
-  box-sizing: border-box;
+}
+
+.work li {
+  margin: 10px 0;
+}
+
+.work a {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+footer {
+  padding: 30px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer nav a {
+  color: #666;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
 }
